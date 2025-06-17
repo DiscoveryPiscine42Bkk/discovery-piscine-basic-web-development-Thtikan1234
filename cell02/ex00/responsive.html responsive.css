@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Two Box Layout</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ensure HTML and Body take full viewport dimensions */
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars if content exactly fits */
+            font-family: "Inter", sans-serif; /* Apply Inter font */
+        }
+
+        /* Make the table stretch to fill the available space */
+        .full-page-table {
+            height: 100%; /* Make table take full height of its parent (body) */
+            table-layout: fixed; /* Ensures column widths are respected */
+        }
+
+        /* Define fixed width for table cells within the fixed layout */
+        .full-page-table td {
+            width: 50%; /* Each cell takes exactly half the table width */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center">
+    <div class="w-full h-full p-4">
+        <table class="full-page-table w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <tbody>
+                <tr>
+                    <td class="py-4 px-6 text-gray-800 text-lg text-center bg-lime-600 text-white font-medium rounded-tl-lg">
+                        First cell
+                    </td>
+                    <td class="py-4 px-6 text-gray-800 text-lg text-center bg-rose-300 font-medium rounded-tr-lg">
+                        Second cell
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
