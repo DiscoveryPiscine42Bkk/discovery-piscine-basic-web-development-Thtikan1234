@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Full-Page Table</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        html, body {
+            height: 100%; 
+            width: 100%;  
+            margin: 0;    
+            padding: 0;   
+            overflow: hidden; 
+            font-family: "Inter", sans-serif; 
+        }
+
+       
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3f4f6; 
+        }
+
+       
+        .full-page-table {
+            height: 100%;
+            table-layout: fixed; 
+            border-collapse: collapse;
+        }
+
+        
+        .full-page-table td {
+            width: 50%; 
+            padding: 1.5rem; 
+            text-align: center; 
+            font-size: 1.125rem; 
+            font-weight: 500; 
+            color: #1f2937; 
+            border: 1px solid #d1d5db; 
+        }
+
+       
+        .full-page-table .cell-one {
+            background-color: #84cc16; 
+            color: #FFFFFF; 
+            border-top-left-radius: 0.75rem; 
+            border-bottom-left-radius: 0.75rem; 
+            border-right: none; 
+        }
+
+        .full-page-table .cell-two {
+            background-color: #fca5a5; 
+            border-top-right-radius: 0.75rem; 
+            border-bottom-right-radius: 0.75rem; 
+            border-left: none; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="w-full h-full p-4 flex items-center justify-center">
+        <table class="full-page-table w-full bg-white rounded-lg shadow-xl overflow-hidden">
+            <tbody>
+                <tr>
+                    <td class="cell-one">
+                        First cell
+                    </td>
+                    <td class="cell-two">
+                        Second cell
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
