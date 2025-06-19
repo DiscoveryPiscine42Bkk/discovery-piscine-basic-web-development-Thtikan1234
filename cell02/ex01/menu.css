@@ -50,7 +50,7 @@ body {
   background-color: #ffe6cc;
 }
 
-/* Show dropdown on hover */
+
 .sandwich-menu ul li:hover .dropdown {
   display: block;
 }
