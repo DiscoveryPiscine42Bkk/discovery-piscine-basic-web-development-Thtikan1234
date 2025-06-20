@@ -23,7 +23,17 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 8px;
+            
         }
+        img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Keeps the circular shape */
+    border: 4px solid #3490dc; /* Adjust border if needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+        
     </style>
 </head>
 <body>
@@ -39,19 +49,25 @@
         </div>
     </nav>
 
-    <div class="container mx-auto p-4 md:p-8">
-        <section id="about" class="bg-white rounded-xl shadow-lg p-6 md:p-10 mb-8 mt-4">
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <img src="https://scontent.fbkk6-2.fna.fbcdn.net/v/t39.30808-6/321609877_1311568113018665_6247767708302576174_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=UFjRxMQ7kDMQ7kNvwHf4Xyk&_nc_oc=AdmjvNLR8V-w6E2AcWwCf6HjsxRMrv7vvfb6EI1sjHcxK84X5G6YxO9zOxeYxxL0gvw&_nc_zt=23&_nc_ht=scontent.fbkk6-2.fna&_nc_gid=wBPttHb2j9TW-rY_c9SSgw&oh=00_AfPBsALaR1nsf6snK4j5xOfD3LGi1UpcrCHwM4ZyhWVKqQ&oe=685ABEA4" alt="Profile Picture" class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-md object-cover">
-                <div class="text-center md:text-left">
-                    <h2 class="text-4xl font-extrabold text-gray-900">Thitikan Prasit </h2>
-                    <p class="text-xl text-blue-600 font-semibold mt-2">ฐิติกานต์ ประสิทธิ์</p>
-                    <p class="text-gray-600 mt-4 max-w-2xl">
-                        คณะครุศาสตร์อุตสาหกรรมบัณฑิต (เทคโนโลยีคอมพิวเตอร์)
-                    </p>
-                </div>
+<div class="container mx-auto p-4 md:p-8">
+    <section id="about" class="bg-white rounded-xl shadow-lg p-6 md:p-10 mb-8 mt-4">
+        <div class="flex flex-col md:flex-row items-center gap-6">
+            <img 
+                src="https://mail.google.com/mail/u/0?ui=2&ik=c2b8b88b25&attid=0.1&permmsgid=msg-f:1835426303334812185&th=1978be7f95ae0a19&view=att&disp=safe&realattid=92AA4234-8299-4EFE-A78C-652543560D14&zw" 
+                alt="Profile Picture"
+                class="w-24 h-24 rounded-full object-cover"
+            >
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-extrabold text-gray-900">Thitikan Prasit</h2>
+                <p class="text-xl text-blue-600 font-semibold mt-2">ฐิติกานต์ ประสิทธิ์</p>
+                <p class="text-gray-600 mt-4 max-w-2xl">
+                    คณะครุศาสตร์อุตสาหกรรมบัณฑิต (เทคโนโลยีคอมพิวเตอร์)
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
+</div>
+
 
         <section id="experience" class="bg-white rounded-xl shadow-lg p-6 md:p-10 mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-200 pb-2 flex items-center">

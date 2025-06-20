@@ -75,7 +75,7 @@
 
 /* ใส่รูปพื้นหลัง Section 1*/
 .section1 {
-  background-image: url('image/InKaru.jpg');
+  background-image: url('https://admin.curriculum.kmitl.ac.th/api/media/file/karu.jpg');
 }
 
 /* ตั้งค่าตัวอักษรหัวเรื่อง Section 1 */
@@ -120,7 +120,7 @@
 
 /* ตั้งค่าพื้นหลัง Section 3 */
 .section3 {
-  background-image: url('image/karu.jpg');
+  background-image: url('https://siet.kmitl.ac.th/sites/siet/files/styles/responsive_16x9_1200w/public/2023-10/BOY_0425_0.jpg?itok=H9tdIVXl');
   color: #e91e63;
   flex-direction: column;
   text-align: center;
